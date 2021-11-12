@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./pages/galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <h2>Contactanos</h2>
+            <p>Para nosotros es un gusto</p>
+            <input type="text" value="Nombre" name="" id="">
+            <input type="reset" value="Limpiar form">
+            <input type="button" value="Enviar">
+            <input type="number" value="12345" name="" id="">
+        </form>
+        <form action="">
+            <span>Aceptas terminos</span>
+            <input type="checkbox" value="1" name="Aceptar" id="">
+            <p>Hombre</p>
+            <input type="radio" value="hombre" name="genero" id="">
+            <p>Mujer</p>
+            <input type="radio" value="mujer" name="genero" id=""> 
+            <!-- si en radio el name="" es el mismo solo se puede tildar una opcion -->
+        </form>
+        <form action="">
+            <h3>Selecciona tu talle</h3>
+            <legend>Talles de remera</legend>
+            <select name="talles" id="">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+            </select>
+        </form>
+        <form action="">
+            <label for="nombre_apellido">Nombre:</label>
+            <input type="text" value="" name="nombre_apellido" id="">
+            <label for="email">e-mail:</label>
+            <input type="email" name="email" id="">
+            <!-- el label for="" se relacion con el name="" del input -->
+        </form>
+
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
