@@ -1,0 +1,38 @@
+
+        .shape {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+        .shape__cubo {
+            border-style: solid;
+            border-radius: 10%;
+            margin: auto;
+            padding: 15px;
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+        }
+        .shape__circulo {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            background-color: chartreuse;
+        }
+        .shape__cubo--verde {
+            display: none;
+            background-color: chartreuse;
+            width: 200px;
+            height: 200px;
+        }
+        .shape__cubo--miniatura {
+            margin: -50px 20px 10px 10px;
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+
+        }
+/*El orden de las medidas es top - left - bottom - right
+o buttom y top - left y right*/
+/*Este es un comentario de Css */
