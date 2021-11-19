@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    position: fixed;
+    background-color: tomato;
+    
+
+}
+        nav ul {
+            top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav ul li {
+            display: inline;
+            padding: 10px;
+        
+        
+        }
+        
+        .shape {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: brown;
+        }
+        .shape__cubo {
+            border-style: solid;
+            border-radius: 10%;
+            padding: 15px;
+            width: 250px;
+            height: 250px;
+            background-color: cadetblue;
+        }
+        .shape__circulo {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            background-color: chartreuse;
+        }
+        .shape__cubo--verde {
+            display: none;
+            background-color: chartreuse;
+            width: 200px;
+            height: 200px;
+        }
+        .shape__cubo--miniatura {
+            display: flex;
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+            
+
+        }
+/*El orden de las medidas es top - left - bottom - right
+o buttom y top - left y right*/
+/*Este es un comentario de Css */
