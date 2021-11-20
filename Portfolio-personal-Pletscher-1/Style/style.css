@@ -1,0 +1,264 @@
+#navIndex {
+  width: 70%;
+  color: #7E5D93;
+  font-size: 14px ;
+  font-family: Poppins-Regular;
+  margin-top: 10px;
+  margin-left: 3%;
+}
+
+
+
+#bodyIndex {
+  background-color: #C6B5F8;
+  padding: 40px 40px 0px 40px;
+  height: 100vh;
+}
+
+#contenedorIndex {
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  
+}
+
+#nombreIndex {
+  font-family: Gorditas-Regular;
+  color: #F677A3;
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+
+}
+
+#ilustPersonal {
+  width: 80%;
+}
+
+#footerIndex{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+
+}
+
+
+
+#contenedorLogo {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
+#descripcionIndex {
+  font-family: Poppins-Regular;
+  font-size: 12px;
+}
+
+#buttonIndex {
+  background-color: #F677A3;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 10px;
+  border: 0;
+  margin-bottom: 30px;
+}
+
+#aButtonIndex {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Poppins-Regular;
+}
+
+
+
+#contendorImgQuienSoy {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.pagDestacada {
+  font-family: Poppins-Black;
+
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: #C6B5F8;
+}
+
+.titulosQuienSoy {
+  font-family: Gorditas-Regular;
+  font-size: 40px;
+  color: #C6B5F8;
+}
+
+.textosQuienSoy {
+  font-family: Poppins-ExtraLight;
+  font-size: 18px;
+  margin-left: 60px;
+  text-align: center;
+
+}
+
+.recuadroTitulosQuienSoy{
+  background-color: #F677A3;
+  padding: 15px 0 15px;
+}
+
+.subtitulosQuienSoy {
+  font-family: Poppins-Black;
+  color: #FFFFFF;
+  margin-left: 60px;
+}
+
+.anioQuienSoy {
+  font-family: Poppins-MediumItalic;
+  text-align: right;
+}
+
+.contenedorNavPages {
+  width: 100%;
+  background-color: #C6B5F8 ;
+  font-size: 14px;
+  font-family: Poppins-Regular;
+  color: #FFFFFF;
+  height: 50px;
+  position: relative;
+
+
+}
+
+.navPages {
+  width: 60%;
+}
+
+.contenedorLogo1 {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+
+}
+
+.pregFooter {
+  font-family: Poppins-Light;
+}
+
+.derechos {
+  font-family: Poppins-Light;
+  font-size: 12px;
+  background-color: #706D6D ;
+  color: #FFFFFF;
+}
+
+.contenedorDerechos {
+  width: 100%;
+  background-color: #706D6D;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonFooter {
+  background-color: #F677A3;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.aButtonFooter {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Poppins-Regular;
+}
+.footerPages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+
+
+header {
+  display: flex;
+  height: auto;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a img {
+  width: 30px;
+  margin-left: 7px;
+}
+
+
+
+
+
+@font-face {
+  font-family: Poppins-Black ;
+  src: url(../Font/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../Font/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../Font/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Gorditas-Regular;
+  src: url(../Font/Gorditas-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-ExtraLight;
+  src: url(../Font/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Poppins-MediumItalic;
+  src: url(../Font/Poppins-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../Font/Poppins-Light.ttf);
+}
