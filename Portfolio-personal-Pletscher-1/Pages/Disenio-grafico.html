@@ -4,97 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style.css">
     <title>CP - Diseño Gráfico</title>
 </head>
-<body>
+<body class="bodyPages">
     <header>
-        <nav>
-            <ul>
-                <a href="../index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="./Quien-soy.html">
-                    <li>¿Quién soy?</li>
-                </a>
-                <a href="./Desarrollo-web.html">
-                    <li>Desarrollo web</li>
-                </a>
-                <a href="./Disenio-grafico.html">
-                    <li><b>Diseño Gráfico</b></li>
-                </a>
-                <a href="./Contacto.html">
-                    <li>Contacto</li>
-                </a>
-            </ul>
-                <img width="100px" src="../Source/Logo-personal-05.png" alt="Logo personal Camila Pletscher">
-        </nav>
+        <div class="contenedorNavPages">
+            <nav class="navPages">
+                <ul>
+                    <a  class="nombresNavPages" href="../index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Quien-soy.html">
+                        <li>¿Quién soy?</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Desarrollo-web.html">
+                        <li>Desarrollo web</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Disenio-grafico.html">
+                        <li class="pagDestacada">Diseño Gráfico</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+            <img class="logo logoPages" src="../Source/Logo-personal-05.svg" alt="">
     </header>
 <main>
-    <img src="" alt="">
-        <div>
-            <h2>Diseño Gráfico</h2>
-            <p>Soy diseñadora gráfica recibida en la Universidad Nacional de Lanús. Con mas de 4 años de experiencia en el rubro.</p>
-            <button>
-                <a href="">
+    <div class="contenedorDesarrolloDisenio">
+        <img class="ilustDesarrolloDisenio" src="../Source/ilust-dg-04.svg" alt="">
+        <div class="contenedorTituloDesarrolloDisenio">
+            <h2 class="titulosQuienSoy titulosDesarrolloDisenio">Diseño Gráfico</h2>
+            <p class="textosDesarrolloDisenio">Soy diseñadora gráfica recibida en la Universidad Nacional de Lanús. Con mas de 4 años de experiencia en el rubro.</p>
+            <button class="buttonDesarrolloDisenio">
+                <a class="aButtonDesarrolloDisenio" href="">
                 VER PORTFOLIO
                 </a>
             </button>
         </div>
-        <div>
-            <p>Proyecto 1</p>
-            <img src="" alt="">
-            <button>
-                <a href="">
+    </div>
+    <div class="contendorDeContProyectosDG">
+        <div class="contenedorProyectosDG">
+            <p class="subtitulosDesarrolloDisenio">Flyer promoción</p>
+            <p class="textoProyectoDG">Se realizó un flyer de promoción para la marca Nexgard del laboratorio Boehringer Ingelheim para la difusión por WhatsApp.</p>
+            <img class="imgsProyectosDG" src="../Source/bi-promo-carry.png" alt="">
+            <p class="aclaracionesDG">2021 Chappini Becker S.A. Todos los derechos reservados.</p>
+            <button class="buttonDesarrolloDisenio buttonColorProyectos">
+                <a class="aButtonDesarrolloDisenio" href="">
                     VER PROYECTO
                 </a>
             </button>
         </div>
-        <div>
-            <p>Proyecto 2</p>
-            <img src="" alt="">
-            <button>
-                <a href="">
+        <div class="contenedorProyectosDG">
+            <p class="subtitulosDesarrolloDisenio">Revista Digital EDUN</p>
+            <p class="textoProyectoDG">Se realizó un revista digital de moda alternatica para la materia Diseño 4 de la UnLa en la cátedra de Tomas Aversa.</p>
+            <img class="imgsProyectosDG" src="../Source/edun.png" alt="">
+            <p class="aclaracionesDG">El mock up es solo una muestra parcial. Mirá el trabajo completo.</p>
+            <button class="buttonDesarrolloDisenio buttonColorProyectos">
+                <a class="aButtonDesarrolloDisenio" href="">
+                    VER PROYECTO
+                </a>
+            </button>
+        </div>    
+        <div class="contenedorProyectosDG">
+            <p class="subtitulosDesarrolloDisenio">Logo personal</p>
+            <p class="textoProyectoDG">Se realizó un logo personal y manual de identidad de diseño gráfico haciendo alusión al nombre Camila Pletscher.</p>
+            <img class="imgsProyectosDG" src="../Source/logo-personal.png" alt="">
+            <p class="aclaracionesDG">El mock up es solo una muestra parcial. Mirá el trabajo completo.</p>
+            <button class="buttonDesarrolloDisenio buttonColorProyectos">
+                <a class="aButtonDesarrolloDisenio" href="">
                     VER PROYECTO
                 </a>
             </button>
         </div>
-        <div>
-            <p>Proyecto 3</p>
-            <img src="" alt="">
-            <button>
-                <a href="">
-                    VER PROYECTO
-                </a>
-            </button>
-        </div>
-        <div>
-            <p>Proyecto 4 (Destacado)</p>
-            <img src="" alt="">
-            <button>
-                <a href="">
+    </div>
+        <div id="contenedorProyectoDestacado">
+            <p id="tituloDestacadoDG">Libro Metáforas Compuetas</p>
+            <p id="textoDestacado">Se realizó libro de Pablo Bernasconi en la materia diseño 4 en la UnLa en la Cátedra de Tomas Aversa.</p>
+            <img id="imgProyectoDestacado" src="../Source/proyecto-libro.jpg" alt="">
+            <button id="buttonDestacado">
+                <a id="aButtonDestacado" href="">
                     VER PROYECTO
                 </a>
             </button>
         </div>        
 </main>
-<footer>
-    <p>¿Puedo ayudarte?</p>
-    <a href="../Pages/Contacto.html">
-        <button>
-        Contacto
+<footer class="footerPages">
+    <p class="pregFooter">¿Puedo ayudarte?</p>
+    
+        <button class="buttonFooter">
+            <a class="aButtonFooter" href="../Pages/Contacto.html">Contacto</a>
         </button>
-    </a>
+    
     <br>
-    <a href="https://github.com/Camila-Pletscher">
-        <img width="30px" src="../Source/icon_github.svg" alt="Github">
-    </a>
-    <a href="https://www.linkedin.com/in/camila-pletscher-537b06177/">
-        <img width="30px" src="../Source/icon_linkedin.svg" alt="Linkedin">
-    </a>
-    <a href="https://www.behance.net/camilapletscher1">
-        <img width="30px" src="../Source/icon_behance.svg" alt="Behance">
-    </a>
-    <p>2021 Camila Pletscher. Todos los derechos reservados.</p>
+    <div>
+        <a href="https://github.com/Camila-Pletscher">
+            <img width="30px" src="../Source/icon_github-1.svg" alt="Github">
+        </a>
+        <a href="https://www.linkedin.com/in/camila-pletscher-537b06177/">
+            <img width="30px" src="../Source/icon_linkedin-1.svg" alt="Linkedin">
+        </a>
+        <a href="https://www.behance.net/camilapletscher1">
+            <img width="30px" src="../Source/icon_behance-1.svg" alt="Behance">
+        </a>
+    </div>
+    <div class="contenedorDerechos">
+        <p class="derechos">2021 Camila Pletscher. Todos los derechos reservados.</p>
+    </div>
+
+    
 </footer>
 </body>
 </html>

@@ -12,7 +12,10 @@
 #bodyIndex {
   background-color: #C6B5F8;
   padding: 40px 40px 0px 40px;
-  height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #contenedorIndex {
@@ -45,19 +48,12 @@
 
 }
 
-
-
 #contenedorLogo {
   width: 27%;
   display: flex;
   justify-content: center;
 
 }
-
-
-
-
-
 
 
 #descripcionIndex {
@@ -85,11 +81,131 @@
 #contendorImgQuienSoy {
   display: flex;
   flex-direction: row;
+  margin-top: 40px;
 
 }
 
+#finalQuienSoy {
+  font-family: Poppins-Medium;
+  color: #C6B5F8;
+  font-size: 20px;
+}
+
+#mainIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+#contenedorDisenio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+}
+
+#ilustDisenio {
+  width: 70%;
+}
+
+#imgProyectoDestacado {
+  width: 90%;
+  margin: 2%;
+
+}
+
+#buttonDestacado {
+  background-color: #F677A3;
+  border-radius: 30px;
+  padding: 15px 60px;
+  border: 0;
+  margin-top: 1%;
+}
+
+#aButtonDestacado {
+  font-family: Poppins-Regular;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#textoDestacado {
+  font-family: Poppins-ExtraLight;
+  font-size: 20px;
+  margin: 2% 20%;
+  text-align: center;
+}
+
+
+#tituloDestacadoDG {
+  font-family: Gorditas-Regular;
+  color: #C6B5F8;
+  font-size: 34px;
+  margin: 1% 20%;
+
+}
+
+#tituloPrincipalQuienSoy {
+  text-align: start;
+  margin-left: 10%;
+}
+
+#contenedorProyectoDestacado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 2% 0%;
+}
+
+#imgContacto {
+  width: 30%;
+}
+
+#mainContenedorContacto {
+  display: flex;
+  flex-direction: row;
+}
+
+#tituloContacto {
+  font-family: Gorditas-Regular;
+  color: #C6B5F8;
+  font-size: 40px;
+  text-align: left;
+  margin: 0;
+}
+#enviar {
+  background-color: #F677A3;
+  color: #FFFFFF;
+  width: 50%;
+  margin: 0% 25%;
+}
+
+.contenedorDesarrolloDisenio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.ilustDesarrolloDisenio {
+  width: 70%;
+}
+
+.contendorDeImgsProyectosDW {
+  width: 50%;
+}
+
+.imgsProyectosDW {
+  width: 100%;
+}
+
 .pagDestacada {
-  font-family: Poppins-Black;
+  font-family: Poppins-Bold;
 
 }
 
@@ -99,29 +215,39 @@
   background-color: #C6B5F8;
 }
 
+.logoPages {
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+
 .titulosQuienSoy {
   font-family: Gorditas-Regular;
   font-size: 40px;
   color: #C6B5F8;
+  text-align: center;
 }
 
 .textosQuienSoy {
   font-family: Poppins-ExtraLight;
-  font-size: 18px;
-  margin-left: 60px;
-  text-align: center;
+  font-size: 17px;
+  margin: 2% 10%;
+  text-align: left;
 
 }
 
 .recuadroTitulosQuienSoy{
   background-color: #F677A3;
-  padding: 15px 0 15px;
+  padding: 1% 10%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .subtitulosQuienSoy {
-  font-family: Poppins-Black;
+  font-family: Poppins-Bold;
   color: #FFFFFF;
-  margin-left: 60px;
+  margin: 0%;
+
 }
 
 .anioQuienSoy {
@@ -145,12 +271,10 @@
   width: 60%;
 }
 
-.contenedorLogo1 {
-  display: flex;
-  justify-content: center;
-  margin-right: 10px;
-
+.nombresNavPages {
+  color: #FFFFFF;
 }
+
 
 .pregFooter {
   font-family: Poppins-Light;
@@ -191,6 +315,108 @@
   background-color: #E5E5E5;
 }
 
+.bodyPages {
+  margin: 0;
+}
+
+.titulosDesarrolloDisenio {
+  margin: 0;
+}
+
+.textosDesarrolloDisenio {
+  font-family: Poppins-ExtraLight;
+  margin: 0 20%;
+  text-align: center;
+  
+}
+
+.buttonDesarrolloDisenio {
+  background-color:#74D3C5;
+  color: #FFFFFF;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 0;
+}
+
+.aButtonDesarrolloDisenio {
+  text-decoration: none;
+  text-align: center;
+  font-family: Poppins-Regular;
+  color: #FFFFFF;
+}
+
+.contenedorTituloDesarrolloDisenio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorProyectosDW {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3%;
+}
+
+.subtitulosDesarrolloDisenio {
+  font-family: Gorditas-Regular;
+  color: #C6B5F8;
+  font-size: 26px;
+  text-align: center;
+  margin: 8px 0px;
+
+}
+
+.buttonColorProyectos {
+  background-color: #F677A3;
+}
+
+.contenedorDescripcionProyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.imgsProyectosDG {
+  width: 100%;
+}
+
+.contenedorProyectosDG {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 2%;
+  width: 30%;
+}
+
+.contendorDeContProyectosDG {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  width: auto;
+
+}
+
+.textoProyectoDG {
+  font-family: Poppins-ExtraLight;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.aclaracionesDG {
+  font-family: Poppins-ExtraLight;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
+
+
+
 
 header {
   display: flex;
@@ -213,17 +439,46 @@ nav ul a {
   text-decoration: none;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+textarea {
+  font-family: Poppins-Light;
+  color: #706D6D;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 2%;
 }
+
+
 
 footer a img {
   width: 30px;
   margin-left: 7px;
 }
 
+label {
+  font-family: Poppins-Medium;
+  margin: 2% 0%;
+}
+
+input {
+  font-family: Poppins-Light;
+  border-radius: 25px;
+  padding: 2%;
+  color: darkgrey;
+  border: 1px solid;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 2%;
+  width: 40%;
+}
+
+form p {
+  font-family: Poppins-Light;
+  font-size: 18px;
+}
 
 
 

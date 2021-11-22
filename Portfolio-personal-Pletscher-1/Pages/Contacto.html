@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style.css">
     <title>CP - Contacto</title>
 </head>
-<body>
+<body class="bodyPages">
     <header>
-        <nav>
-            <ul>
-                <a href="../index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="./Quien-soy.html">
-                    <li>¿Quién soy?</li>
-                </a>
-                <a href="./Desarrollo-web.html">
-                    <li>Desarrollo web</li>
-                </a>
-                <a href="./Disenio-grafico.html">
-                    <li>Diseño Gráfico</li>
-                </a>
-                <a href="./Contacto.html">
-                    <li><b>Contacto</b></li>
-                </a>
-            </ul>
-                <img width="100px" src="../Source/Logo-personal-05.png" alt="Logo personal Camila Pletscher">
-        </nav>
+        <div class="contenedorNavPages">
+            <nav class="navPages">
+                <ul>
+                    <a  class="nombresNavPages" href="../index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Quien-soy.html">
+                        <li>¿Quién soy?</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Desarrollo-web.html">
+                        <li>Desarrollo web</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Disenio-grafico.html">
+                        <li>Diseño Gráfico</li>
+                    </a>
+                    <a class="nombresNavPages" href="./Contacto.html">
+                        <li class="pagDestacada">Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+            <img class="logo logoPages" src="../Source/Logo-personal-05.svg" alt="">
     </header>
-    <main>
+    <main id="mainContenedorContacto">
+        <img id="imgContacto" src="../Source/ilust-contacto-05.svg" alt="">
         <form action="">
-            <h2>Contacto</h2>
+            <h2 id="tituloContacto">Contacto</h2>
+            <p>Gracias por interesarte en mis proyectos. Si queres contactarte conmigo, no dudes en escribirme. Estaré encantada de contestarte. </p>
             <label for="nombre">Nombre:</label>
-            <input type="text" value="nombre"> <br><br>
+            <input type="text" value="nombre"> <br>
             <label for="mail">Mail:</label>
-            <input type="email" value="mail" name="" id=""> <br><br>
+            <input type="email" value="mail" name="" id=""> <br>
             <label for="tel">Teléfono:</label>
-            <input type="number" value="12345" name="" id=""> <br><br>
-            <label for="texto">¿En qué te ayudo?</label>
-            <input type="text" value="Hola, queria consultar" name="" id=""> <br><br>
-            <input type="submit" value="Enviar">
+            <input type="number" value="12345" name="" id=""> <br>
+            <label for="consulta">¿En qué te ayudo?</label>
+            <textarea name="consulta" id="" cols="30" rows="10">Hola, queria consultar</textarea> <br>
+            <input type="submit" value="Enviar" id="enviar">
         </form>
     </main>
     <footer>
