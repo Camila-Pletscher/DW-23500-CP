@@ -1,0 +1,116 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* header {
+    width: 100%;
+    position: fixed;
+    background-color: tomato;
+    
+
+}
+        nav ul {
+            top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav ul li {
+            display: inline;
+            padding: 10px;
+        
+        
+        }
+        
+        .shape {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: brown;
+        }
+        .shape__cubo {
+            border-style: solid;
+            border-radius: 10%;
+            padding: 15px;
+            width: 250px;
+            height: 250px;
+            background-color: cadetblue;
+        }
+        .shape__circulo {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            background-color: chartreuse;
+        }
+        .shape__cubo--verde {
+            display: none;
+            background-color: chartreuse;
+            width: 200px;
+            height: 200px;
+        }
+        .shape__cubo--miniatura {
+            display: flex;
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+            
+
+        } */
+/*El orden de las medidas es top - left - bottom - right
+o buttom y top - left y right*/
+/*Este es un comentario de Css */
+
+#grid__template {
+    height: 800px;
+    display: grid;
+    color: white;
+    background-color: cornflowerblue;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.border {
+    border-color: black;
+    border-style: solid;
+}
+
+#plantilla {
+    display: grid;
+    grid-template-areas: 
+        "nav header header" /*100px*/
+        "nav productos publicidad" /*2fr*/
+        "nav servicios publicidad" /*3fr*/
+        "nav footer footer"; /*170px*/
+
+    /* grid-template-rows: 75px auto 3fr 170px;
+    grid-template-columns: 20% auto 300px; */
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(3, 3fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: darkblue;
+}
+footer {
+    grid-area: footer;
+    background-color: crimson;
+}
+
+#servicios {
+    grid-area: servicios;
+    background-color: darkgrey;
+}
+.publicidad {
+    grid-area: publicidad;
+    background-color: darkgreen;
+}
+
+.menu {
+    grid-area: nav;
+    background-color: darkorange;
+}
