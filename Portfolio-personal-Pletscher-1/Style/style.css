@@ -1,3 +1,5 @@
+/* Inicio los ID`s de mi pag  */
+
 #navIndex {
   width: 70%;
   color: #7E5D93;
@@ -6,8 +8,6 @@
   margin-top: 10px;
   margin-left: 3%;
 }
-
-
 
 #bodyIndex {
   background-color: #C6B5F8;
@@ -55,7 +55,6 @@
 
 }
 
-
 #descripcionIndex {
   font-family: Poppins-Regular;
   font-size: 12px;
@@ -76,8 +75,6 @@
   font-family: Poppins-Regular;
 }
 
-
-
 #contendorImgQuienSoy {
   display: flex;
   flex-direction: row;
@@ -96,8 +93,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-
 
 #contenedorDisenio {
   display: flex;
@@ -139,7 +134,6 @@
   text-align: center;
 }
 
-
 #tituloDestacadoDG {
   font-family: Gorditas-Regular;
   color: #C6B5F8;
@@ -177,12 +171,18 @@
   text-align: left;
   margin: 0;
 }
+
 #enviar {
   background-color: #F677A3;
   color: #FFFFFF;
   width: 50%;
   margin: 0% 25%;
 }
+
+/* Fin de los ID`s de mi pag  */
+
+
+/* Inicio de las clases de mi pag  */
 
 .contenedorDesarrolloDisenio {
   display: flex;
@@ -263,8 +263,6 @@
   color: #FFFFFF;
   height: 50px;
   position: relative;
-
-
 }
 
 .navPages {
@@ -274,7 +272,6 @@
 .nombresNavPages {
   color: #FFFFFF;
 }
-
 
 .pregFooter {
   font-family: Poppins-Light;
@@ -412,11 +409,10 @@
   text-align: center;
 }
 
+/* Fin de las clases de mi pag  */
 
 
-
-
-
+/* Inicio de estilos asignados por nombre de etiqueta */
 
 header {
   display: flex;
@@ -446,8 +442,6 @@ textarea {
   border-radius: 20px;
   padding: 2%;
 }
-
-
 
 footer a img {
   width: 30px;
@@ -480,8 +474,10 @@ form p {
   font-size: 18px;
 }
 
+/* Fin de estilos asignados por nombre de etiqueta */
 
 
+/* Inicio - Tipografias */
 
 @font-face {
   font-family: Poppins-Black ;
@@ -517,3 +513,5 @@ form p {
   font-family: Poppins-Light;
   src: url(../Font/Poppins-Light.ttf);
 }
+
+/* Fin - Tipografias */
