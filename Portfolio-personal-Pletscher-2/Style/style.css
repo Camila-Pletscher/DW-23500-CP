@@ -1,3 +1,7 @@
+/* * {
+  border: solid coral 1px;
+} */
+
 /* Inicio los ID`s de mi pag  */
 
 #navIndex {
@@ -18,10 +22,11 @@
   justify-content: center;
 }
 
+/* layout index  */
 #contenedorIndex {
   display: grid;
   grid-template-areas: 
-      "header contenedorLogo"
+      "headerIndex contenedorLogo"
       "mainIndex mainIndex";
   grid-template-columns: 80% 20%;
   grid-template-rows: repeat(2, auto);
@@ -31,8 +36,6 @@
   height: auto;
   background-color: #FFFFFF;  
 }
-
-
 
 #nombreIndex {
   font-family: Gorditas-Regular;
@@ -54,12 +57,14 @@
   flex-direction: row;
   justify-content: center;
   padding-top: 10px;
+  grid-area: footerIndex;
 
 }
 
 #contenedorLogo {
   display: flex;
   justify-content: center;
+  grid-area: contenedorLogo;
 
 }
 
@@ -89,6 +94,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 40px;
+  grid-area: contendorImgQuienSoy;
 
 }
 
@@ -150,6 +156,7 @@
   color: #C6B5F8;
   font-size: 34px;
   margin: 1% 20%;
+  text-align: center;
 
 }
 
@@ -164,6 +171,7 @@
   align-items: center;
   width: 100%;
   margin: 2% 0%;
+  grid-area: contenedorProyectoDestacado;
 }
 
 #imgContacto {
@@ -173,6 +181,7 @@
 #mainContenedorContacto {
   display: flex;
   flex-direction: row;
+  grid-area: mainContenedorContacto;
 }
 
 #tituloContacto {
@@ -195,20 +204,39 @@
 
 /* Inicio de las clases de mi pag  */
 
+.headerIndex {
+  grid-area: headerIndex;
+}
+
 .contenedorDesarrolloDisenio {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
   width: 100%;
+  grid-area: contenedorDesarrolloDisenio;
 }
 
 .ilustDesarrolloDisenio {
   width: 70%;
 }
 
-.contendorDeImgsProyectosDW {
-  width: 50%;
+.contendorDeImgsProyectosDW1 {
+  grid-area: contendorDeImgsProyectosDW1 ;
+  display: flex;
+  align-items: center;
+}
+
+.contendorDeImgsProyectosDW2 {
+  grid-area: contendorDeImgsProyectosDW2 ;
+  display: flex;
+  align-items: center;
+}
+
+.contendorDeImgsProyectosDW3 {
+  grid-area: contendorDeImgsProyectosDW3 ;
+  display: flex;
+  align-items: center;
 }
 
 .imgsProyectosDW {
@@ -222,14 +250,8 @@
 
 .logo {
   width: 100px;
-  height: 100px;
+  /* height: 100px; */
   background-color: #C6B5F8;
-}
-
-.logoPages {
-  position: absolute;
-  right: 10%;
-  top: 0;
 }
 
 .titulosQuienSoy {
@@ -272,15 +294,21 @@
   font-size: 14px;
   font-family: Poppins-Regular;
   color: #FFFFFF;
-  height: 50px;
-  position: relative;
-  grid-
+  height: auto;
+  grid-area: contenedorNavPages;
+  display: grid;
+  grid-template-areas:
+  "contenedorNavPages logoQuienSoy";
+  grid-template-columns: 80% 20%;
+  grid-template-rows: auto;
+
 
 
 }
 
 .navPages {
-  width: 60%;
+  width: 80%;
+  align-self: center;
 }
 
 .nombresNavPages {
@@ -324,6 +352,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #E5E5E5;
+  grid-area: footerPages;
 }
 
 .bodyPages {
@@ -331,16 +360,138 @@
 
 }
 
-.bodyQuienSoy {
+/* layout quien soy  */
+.contenedorQuienSoy {
   display: grid;
   grid-template-areas: 
-      "contenedorNavPage logoPages"
-      "contendorImgQuienSoy descripQuienSoy"
-      "seccionExperiencia seccionExperiencia"
-      "seccionEstudios seccionEstudios"
-      "footerPages footerPages";
-  grid-template-columns: repeat(2, auto);
+      "headerQuienSoy headerQuienSoy headerQuienSoy"
+      "contendorImgQuienSoy descripQuienSoy descripQuienSoy"
+      "seccionExperiencia seccionExperiencia seccionExperiencia"
+      "seccionEstudios seccionEstudios seccionEstudios"
+      "footerPages footerPages footerPages";
+  grid-template-columns: 40% 40% 20%;
   grid-template-rows: repeat(5, auto);
+}
+
+/* inicio layout Desarrollo web  */
+.contenedorDW {
+  display: grid;
+  grid-template-areas: 
+    "headerDW headerDW headerDW contenedorLogoDW"
+    "vacio1 contenedorDesarrolloDisenio contenedorDesarrolloDisenio vacio2"
+    "vacio1 contenedorTituloDesarrolloDisenio contenedorTituloDesarrolloDisenio vacio2"
+    "contenedorDeProyectosDW contenedorDeProyectosDW contenedorDeProyectosDW contenedorDeProyectosDW"
+    "footerPages footerPages footerPages footerPages";
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: auto;
+
+}
+
+.contenedorDeProyectosDW {
+  display: grid;
+  grid-area: contenedorDeProyectosDW;
+  grid-template-areas:
+    "contenedorProyectosDW1"
+    "contenedorProyectosDW2"
+    "contenedorProyectosDW3";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,auto);
+  column-gap: 1%;
+}
+
+.contenedorProyectosDW1 {
+
+  display: grid;
+  grid-template-areas: 
+    "contendorDeImgsProyectosDW1 contenedorDescripcionProyectos1";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    column-gap: 0.5em;
+  margin: 3%;
+  grid-area: contenedorProyectosDW1;
+
+}
+
+.contenedorProyectosDW2 {
+  display: grid;
+  grid-template-areas: 
+    "contenedorDescripcionProyectos2 contendorDeImgsProyectosDW2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    column-gap: 0.5em;
+  margin: 3%;
+  grid-area: contenedorProyectosDW2;
+}
+
+.contenedorProyectosDW3 {
+  display: grid;
+  grid-template-areas: 
+    "contendorDeImgsProyectosDW3 contenedorDescripcionProyectos3";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    column-gap: 0.5em;
+  margin: 3%;
+  grid-area: contenedorProyectosDW3;
+}
+
+/* fin layout Desarrollo web  */
+
+/* layout contacto  */
+.contenedorContacto {
+  display: grid;
+  grid-template-areas:
+    "headerContacto logoContacto"
+    "mainContenedorContacto mainContenedorContacto"
+    "footerPages footerPages";
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+}
+
+.headerContacto {
+  grid-area: headerContacto;
+}
+
+.logoContacto {
+  grid-area: logoContacto;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorLogoDW {
+  grid-area: contenedorLogoDW;
+  display: flex;
+  justify-content: center;
+}
+
+.headerDW {
+  grid-area: headerDW;
+}
+
+.headerQuienSoy {
+  grid-area: headerQuienSoy;
+  /* width: 100%; */
+
+}
+
+
+
+.logoQuienSoy {
+  grid-area: logoQuienSoy;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.descripQuienSoy {
+  grid-area: descripQuienSoy;
+}
+
+.seccionExperiencia {
+  grid-area: seccionExperiencia;
+}
+
+.seccionEstudios {
+  grid-area: seccionEstudios;
 }
 
 .titulosDesarrolloDisenio {
@@ -349,9 +500,47 @@
 
 .textosDesarrolloDisenio {
   font-family: Poppins-ExtraLight;
-  margin: 0 20%;
+  margin: 0;
   text-align: center;
   
+}
+
+/* inicio layout Diseño grafico  */
+.contenedorDG {
+  display: grid;
+  grid-template-areas:
+    "headerDG logoDG"
+    "mainDG mainDG"
+    "footerPages footerPages";
+    grid-template-columns: 80% 20%;
+}
+
+.contendorDeContProyectosDG {
+  display: grid;
+  grid-template-areas: 
+    "contenedorProyectosDG1 contenedorProyectosDG2 contenedorProyectosDG3"
+    "contenedorProyectoDestacado contenedorProyectoDestacado contenedorProyectoDestacado" ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto);
+  margin: 0px;
+  width: auto;
+
+}
+
+/* fin layout Diseño grafico  */
+
+.headerDG {
+  grid-area: headerDG;
+}
+
+.logoDG {
+  grid-area: logoDG;
+  display: flex;
+  justify-content: center;
+}
+
+.mainDG {
+  grid-area: mainDG;
 }
 
 .buttonDesarrolloDisenio {
@@ -361,6 +550,7 @@
   padding: 10px 20px;
   margin-top: 20px;
   border: 0;
+  align-self: center;
 }
 
 .aButtonDesarrolloDisenio {
@@ -374,13 +564,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.contenedorProyectosDW {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 3%;
+  grid-area: contenedorTituloDesarrolloDisenio;
 }
 
 .subtitulosDesarrolloDisenio {
@@ -396,31 +580,51 @@
   background-color: #F677A3;
 }
 
-.contenedorDescripcionProyectos {
+.contenedorDescripcionProyectos1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
+  justify-content: center;
+  grid-area: contenedorDescripcionProyectos1;
+}
+
+.contenedorDescripcionProyectos2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: contenedorDescripcionProyectos2;
+}
+
+.contenedorDescripcionProyectos3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: contenedorDescripcionProyectos3;
 }
 
 .imgsProyectosDG {
   width: 100%;
 }
 
-.contenedorProyectosDG {
+.contenedorProyectosDG1 {
   display: flex;
   flex-direction:column;
   align-items: center;
   margin: 2%;
-  width: 30%;
+  grid-area: contenedorProyectosDG1;
 }
-
-.contendorDeContProyectosDG {
+.contenedorProyectosDG2 {
   display: flex;
-  flex-direction: row;
-  margin: 0px;
-  width: auto;
-
+  flex-direction:column;
+  align-items: center;
+  margin: 2%;
+  grid-area: contenedorProyectosDG2;
+}
+.contenedorProyectosDG3 {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 2%;
+  grid-area: contenedorProyectosDG3;
 }
 
 .textoProyectoDG {
@@ -441,10 +645,10 @@
 
 /* Inicio de estilos asignados por nombre de etiqueta */
 
-header {
+/* header {
   grid-area: header;
   height: auto;
-}
+} */
 
 nav ul li {
   display: inline;
