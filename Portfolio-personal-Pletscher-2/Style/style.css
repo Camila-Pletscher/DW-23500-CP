@@ -354,12 +354,12 @@
 .contenedorQuienSoy {
   display: grid;
   grid-template-areas: 
-      "headerQuienSoy headerQuienSoy headerQuienSoy"
-      "contendorImgQuienSoy descripQuienSoy descripQuienSoy"
-      "seccionExperiencia seccionExperiencia seccionExperiencia"
-      "seccionEstudios seccionEstudios seccionEstudios"
-      "footerPages footerPages footerPages";
-  grid-template-columns: 40% 40% 20%;
+      "headerQuienSoy headerQuienSoy"
+      "contendorImgQuienSoy descripQuienSoy"
+      "seccionExperiencia seccionExperiencia"
+      "seccionEstudios seccionEstudios"
+      "footerPages footerPages";
+  grid-template-columns: 40% 60%;
   grid-template-rows: repeat(5, auto);
 }
 
