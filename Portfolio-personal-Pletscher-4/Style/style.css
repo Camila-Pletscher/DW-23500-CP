@@ -62,8 +62,10 @@
   display: flex;
   justify-content: center;
   grid-area: contenedorLogo;
-
 }
+
+
+
 
 #descripcionIndex {
   font-family: Poppins-Regular;
@@ -162,6 +164,7 @@
   margin-left: 10%;
 }
 
+
 #contenedorProyectoDestacado {
   display: flex;
   flex-direction: column;
@@ -196,6 +199,7 @@
   margin: 0% 25%;
 }
 
+
 /* Fin de los ID`s de mi pag  */
 
 
@@ -224,6 +228,20 @@
   align-items: center;
 }
 
+.contendorDeImgsProyectosDW1 img:hover {
+  opacity: 0.8;
+}
+
+.contendorDeImgsProyectosDW2 img:hover {
+  opacity: 0.8;
+}
+
+.contendorDeImgsProyectosDW3 img:hover {
+  opacity: 0.8;
+}
+
+
+
 .contendorDeImgsProyectosDW2 {
   grid-area: contendorDeImgsProyectosDW2 ;
   display: flex;
@@ -249,6 +267,18 @@
   width: 100px;
   /* height: 100px; */
   background-color: #C6B5F8;
+  animation-name: logo-color;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes logo-color {
+  0% {background-color: #C6B5F8;}
+  50% {background-color: #F677A3;}
+  75% {background-color: #74D3C5 ;}
+  100% {background-color: #C6B5F8;}
 }
 
 .titulosQuienSoy {
@@ -267,11 +297,27 @@
 }
 
 .recuadroTitulosQuienSoy{
-  background-color: #F677A3;
+  /* background-color: #F677A3; */
+  background-image: linear-gradient(to right ,#74D3C5, #C6B5F8, #F677A3 );
+  background-repeat: repeat;
   padding: 1% 10%;
   display: flex;
   justify-content: space-between;
+  animation-name: gradient;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+
 }
+
+@keyframes gradient {
+  0% { background-position: 0 0 ;}
+  50% { background-position: -80rem 0}
+  100% { background-position: 0 0 ;}
+  
+}
+
+
 
 .subtitulosQuienSoy {
   font-family: Poppins-Bold;
@@ -535,7 +581,7 @@
 
 .logoDG {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 0
 }
 
@@ -551,7 +597,9 @@
   margin-top: 20px;
   border: 0;
   align-self: center;
+  box-shadow: 0 1em 2em rgba(0, 0,0, 0.50);
 }
+
 
 .aButtonDesarrolloDisenio {
   text-decoration: none;
@@ -653,6 +701,7 @@
 nav ul li {
   display: inline;
   margin: 5px;
+  
 }
 
 nav ul {
