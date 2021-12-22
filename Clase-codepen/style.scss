@@ -1,0 +1,72 @@
+$step: 16px;
+
+//$ancho: 300px;
+//$alto: 500px;
+
+$azul: #448aff;
+$green: #00e676;
+
+$tipo: amarillo;
+
+@mixin tamanios($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+
+.caja {
+  &__uno {
+    @include tamanios(500px, 50px);
+    background-color: $green;
+  }
+  &__dos {
+    @include tamanios(300px, 20px);
+    @if $tipo == azul {
+      background-color: $azul;
+    } @else if $tipo == green {
+      background-color: green;
+    } @else {
+      background-color: tomato;
+    }
+  }
+}
+
+@for $valor from 1 through 12 {
+  .col-#{$valor} {
+    width: $step * $valor;
+  }
+}
+
+@each $color in blue, yellow, tomato, black {
+  .#{$color} {
+    background-color: #{$color};
+  }
+}
+
+$colores: (
+  twitter: blue,
+  facebook: grey,
+  youtube: red
+);
+
+@each $valor, $color in $colores {
+  .fondo--#{$valor} {
+    background-color: $color;
+  }
+}
+
+.boton {
+  width: $step * 5;
+  background-color: white;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.boton--aceptar {
+  @extend .boton;
+  background-color: $green;
+}
+
+.boton--cancelar {
+  @extend .boton;
+  background-color: tomato;
+}

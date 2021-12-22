@@ -1,0 +1,103 @@
+.caja__uno {
+  width: 500px;
+  height: 50px;
+  background-color: #00e676;
+}
+
+.caja__dos {
+  width: 300px;
+  height: 20px;
+  background-color: tomato;
+}
+
+.col-1 {
+  width: 16px;
+}
+
+.col-2 {
+  width: 32px;
+}
+
+.col-3 {
+  width: 48px;
+}
+
+.col-4 {
+  width: 64px;
+}
+
+.col-5 {
+  width: 80px;
+}
+
+.col-6 {
+  width: 96px;
+}
+
+.col-7 {
+  width: 112px;
+}
+
+.col-8 {
+  width: 128px;
+}
+
+.col-9 {
+  width: 144px;
+}
+
+.col-10 {
+  width: 160px;
+}
+
+.col-11 {
+  width: 176px;
+}
+
+.col-12 {
+  width: 192px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.black {
+  background-color: black;
+}
+
+.fondo--twitter {
+  background-color: blue;
+}
+
+.fondo--facebook {
+  background-color: grey;
+}
+
+.fondo--youtube {
+  background-color: red;
+}
+
+.boton, .boton--aceptar, .boton--cancelar {
+  width: 80px;
+  background-color: white;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.boton--aceptar {
+  background-color: #00e676;
+}
+
+.boton--cancelar {
+  background-color: tomato;
+}
+/*# sourceMappingURL=style.css.map */
